@@ -4,7 +4,7 @@ using namespace std;
 
 class Solution {
 public:
-    void sortArrays(vector<int>& nums) {
+    void sortColors(vector<int>& nums) {
         int count[3] = {0, 0, 0};
 
         for (int num : nums) {
@@ -17,14 +17,3 @@ public:
         for (int i = 0; i < count[2]; i++) nums[index++] = 2;
     }
 };
-
-int main() {
-    Solution s;
-    vector<int> nums = {2, 0, 2, 1, 1, 0};
-    s.sortArrays(nums);
-    for (int n : nums) {
-        cout << n << " ";
-    }
-    cout << endl;
-    return 0;
-}
